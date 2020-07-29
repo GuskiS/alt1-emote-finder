@@ -2,7 +2,8 @@
   "scripts": {
     "build": "node -r ts-node/register -r tsconfig-paths/register ./node_modules/webpack/bin/webpack.js -p",
     "watch": "yarn build --watch",
-    "serve": "http-server ./dist"
+    "serve": "http-server ./dist",
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "@alt1/base": "0.0.5",
@@ -14,6 +15,7 @@
     "@types/node": "12.12.18",
     "@types/webpack": "4.41.21",
     "file-loader": "6.0.0",
+    "gh-pages": "3.1.0",
     "http-server": "0.12.3",
     "ts-loader": "8.0.1",
     "ts-node": "8.10.2",
