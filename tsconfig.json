@@ -1,5 +1,6 @@
 {
-	"compilerOptions": {
-		"moduleResolution": "Node"
-	}
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "lib": ["DOM", "es2019"]
+  }
 }
